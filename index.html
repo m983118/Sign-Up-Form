@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <div class="left">
+        <div class="logo">
+            <img src="odin.png" alt="odinLogo">Odin
+        </div>          
+        <div class="license">
+            Photo by Halie West on Unsplash
+        </div>
+    </div>
+    
+    <div class="rightTop">
+        <div class="description">
+            This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.
+        </div>
+        <div class="description2">
+            You know you want to.
+        </div>
+    </div>
+    
+    <div class="rightMid">Let's do this!
+        <form action="#" method="get">
+            <div class="leftForm">
+                <div>
+                    <label for="firstName">*First Name : </label><br>
+                    <input type="text" id="firstName" name="firstName" placeholder="William" required>
+                </div>
+                <div>
+                    <label for="email">*Email : </label><br>
+                    <input type="email" id="email" name="email" placeholder="m983118@gmail.com" required>
+                </div>
+                <div>
+                    <label for="password">*Password : </label><br>
+                    <input type="password" id="password" name="password" pattern="\d{8}" required>
+                    <span class="errMsg"></span>          
+                </div>
+            </div>
+            <div class="rightForm">
+                <div>
+                    <label for="lastName">*Last Name : </label><br>
+                    <input type="text" id="lastName" name="lastName" placeholder="Chen" required>
+                </div>
+                <div>
+                    <label for="phoneNum">Phone Number : </label><br>
+                    <input type="text" id="phoneNum" name="phoneNum"><br>
+                </div>
+                <div>
+                    <label for="confirmPassword">*Confirm Password</label><br>
+                    <input oninput="OnInput(event)" type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <div class="rightBottom">
+                    <button type="submit" class="submitBtn">Create Account</button>
+                    <div>Already have an account? <a>Log in</a></div>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>  
+</body>
+</html>

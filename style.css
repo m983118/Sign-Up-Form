@@ -1,0 +1,148 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(Norse_Bold.otf);
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+    grid-template-rows: 33vh 33vh 33vh;
+}
+
+.left, 
+.rightTop, 
+.rightMid,
+.rightBottom {
+    border: 1px solid;
+}
+
+.left {
+    background-image: url("tree.jpg");
+    background-position: center;
+    background-size: cover;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: norse-bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 5vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+.logo img {
+    width: 6vw;
+    height: 7.8vw;
+}
+
+.license {
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.rightTop {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    background-color: whitesmoke;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.description {
+    margin-top: 10vh;
+    margin-left: 5vw;
+    margin-right: 10vw;
+}
+
+.description2 {
+    margin-top: 5vh;
+    margin-left: 5vw;
+}
+
+.rightMid {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    padding-left: 5vw;
+}
+
+form {
+    display: flex;
+}
+
+form div {
+    margin-top: 2vh;
+}
+
+.rightForm {
+    margin-left: 5vw;
+}
+
+label {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+input {
+    border: 1px solid ;
+    border-radius: 4px;
+    width: 20vw;
+}
+
+input:focus {
+    outline-color: royalblue;
+}
+
+.rightBottom {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    background-color: whitesmoke;
+    font-size: 1vw;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.rightBottom button {
+    background-color: #596D48;    
+    border-radius: 8px;
+    border: none;
+    padding: 2vh 2vw;
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: white;
+
+    margin-top: 5vh;
+    margin-left: 5vw;
+}
+
+.rightBottom div {
+    margin-top: 5vh;
+    margin-left: 5vw;
+}
